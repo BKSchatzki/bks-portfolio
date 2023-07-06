@@ -24,4 +24,22 @@ export default [
     stack: ['HTML', 'CSS', 'JavaScript'],
     link: '#'
   },
+  {
+    title: 'Project 4',
+    imgUrl: 'https://picsum.photos/seed/project4/400/300',
+    stack: ['HTML', 'CSS', 'JavaScript'],
+    link: '#'
+  },
+  {
+    title: 'Project 5',
+    imgUrl: 'https://picsum.photos/seed/project5/400/300',
+    stack: ['HTML', 'CSS', 'JavaScript'],
+    link: '#'
+  },
+  {
+    title: 'Project 6',
+    imgUrl: 'https://picsum.photos/seed/project6/400/300',
+    stack: ['HTML', 'CSS', 'JavaScript'],
+    link: '#'
+  },
 ]
