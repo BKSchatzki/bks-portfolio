@@ -63,13 +63,22 @@ function App() {
   )
 
   return (
-    <div className="App">
-      <Intro/>
-      <Portfolio/>
-      <Timeline/>
-      <Contact/>
-      <Footer/>
-    </div>
+    <>
+      <button
+        className="fixed p-2 z-10 right-20 top-4 bg-violet-300 text-lg p-1 rounded-md"
+        onClick={handleThemeSwitch}
+        type="button"
+      >
+        {theme === 'dark' ? sun : moon}
+      </button>
+      <div className="App">
+        <Intro/>
+        <Portfolio/>
+        <Timeline/>
+        <Contact/>
+        <Footer/>
+      </div>
+    </>
   )
 }
 
