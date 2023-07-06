@@ -1,3 +1,10 @@
+/*
+IMPORTANT NOTE WITH ADDING ASSETS VIA RELATIVE PATH 
+  Remember that assets need to be placed in public/, not src/assets/
+  The relative path when in public/ does not need public/, just assets/
+  Remember to keep the slash in front ('/assets/*')
+*/
+
 export default [
   {
     title: 'Project 1',
