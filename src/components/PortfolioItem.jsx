@@ -2,7 +2,12 @@ import React from 'react'
 
 function PortfolioItem({title, imgUrl, stack, link}) {
   return (
-    <div className="border-2 border-stone-900 rounded-md overflow-hidden">
+    <a
+      className="border-2 border-stone-900 rounded-md overflow-hidden"
+      href={link}
+      rel="noopener noreferrer"
+      target="_blank"
+    >
       <img
         alt={title}
         className="w-full h-36 md:h-48 object-cover cursor-pointer"
@@ -18,7 +23,7 @@ function PortfolioItem({title, imgUrl, stack, link}) {
           ))}
         </p>
       </div>
-    </div>
+    </a>
   )
 }
 
