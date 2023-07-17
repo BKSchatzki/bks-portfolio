@@ -1,36 +1,36 @@
-import React from 'react'
-import Title from './Title'
+import React from "react";
+import Title from "./Title";
 
 function Contact() {
   return (
-    <div className="flex flex-col mb-10 mx-auto">
-      <div className="flex justify-center items-center">
+    <div className="mx-auto mb-10 flex flex-col">
+      <div className="flex items-center justify-center">
         <form
           action="#"
-          className="flex flex-col w-full md:w-7/12"
+          className="flex w-full flex-col md:w-7/12"
           method="POST"
         >
           <Title>Contact</Title>
           <input
-            className="p-2 bg-transparent border-2 rounded-md focus:outline-none"
+            className="rounded-md border-2 bg-transparent p-2 focus:outline-none"
             name="name"
             placeholder="Name"
             type="text"
           />
           <input
-            className="my-2 p-2 bg-transparent border-2 rounded-md focus:outline-none"
+            className="my-2 rounded-md border-2 bg-transparent p-2 focus:outline-none"
             name="email"
             placeholder="Email"
             type="email"
           />
           <textarea
-            className="mb-4 p-2 bg-transparent border-2 rounded-md focus:outline-none"
+            className="mb-4 rounded-md border-2 bg-transparent p-2 focus:outline-none"
             name="message"
             placeholder="Message"
             rows="10"
           />
           <button
-            className="text-center inline-block px-8 py-3 w-max text-base font-medium rounded-md text-white bg-gradient-to-r from-yellow-500 to-pink-500 drop-shadow-md hover:stroke-white"
+            className="inline-block w-max rounded-md bg-gradient-to-r from-yellow-500 to-pink-500 px-8 py-3 text-center text-base font-medium text-white drop-shadow-md hover:stroke-white"
             type="button"
           >
             Work With Me.
@@ -38,7 +38,7 @@ function Contact() {
         </form>
       </div>
     </div>
-  )
+  );
 }
 
-export default Contact
+export default Contact;

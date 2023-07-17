@@ -1,14 +1,14 @@
-import React from 'react'
+import React from "react";
 
-function Title({children, id}) {
+function Title({ children, id }) {
   return (
     <h1
-      className="text-2xl font-bold underline underline-offset-8 decoration-4 mb-5 text-stone-900 dark:text-white"
+      className="mb-5 text-2xl font-bold text-stone-900 underline decoration-4 underline-offset-8 dark:text-white"
       id={id && id}
     >
       {children}
     </h1>
-  )
+  );
 }
 
-export default Title
+export default Title;

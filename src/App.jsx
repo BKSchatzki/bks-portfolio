@@ -1,36 +1,36 @@
-import React, {useEffect, useState} from 'react'
-import Intro from './components/Intro'
-import Portfolio from './components/Portfolio'
-import Timeline from './components/Timeline'
-import Contact from './components/Contact'
-import Footer from './components/Footer'
+import React, { useEffect, useState } from "react";
+import Intro from "./components/Intro";
+import Portfolio from "./components/Portfolio";
+import Timeline from "./components/Timeline";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 function App() {
-  const [theme, setTheme] = useState(null)
-  
+  const [theme, setTheme] = useState(null);
+
   useEffect(() => {
-    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      setTheme('dark')
+    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+      setTheme("dark");
     } else {
-      setTheme('light')
+      setTheme("light");
     }
-  }, [])
+  }, []);
 
   const handleThemeSwitch = () => {
-    setTheme(theme === 'dark' ? 'light' : 'dark')
-  }
+    setTheme(theme === "dark" ? "light" : "dark");
+  };
 
   useEffect(() => {
-    if (theme === 'dark') {
-      document.documentElement.classList.add('dark');
+    if (theme === "dark") {
+      document.documentElement.classList.add("dark");
     } else {
-      document.documentElement.classList.remove('dark');
+      document.documentElement.classList.remove("dark");
     }
-  }, [theme])
-  
+  }, [theme]);
+
   const sun = (
     <svg
-      className="w-6 h-6"
+      className="h-6 w-6"
       fill="none"
       stroke="currentColor"
       strokeWidth={1.5}
@@ -43,11 +43,11 @@ function App() {
         strokeLinejoin="round"
       />
     </svg>
-  )
+  );
 
   const moon = (
     <svg
-      className="w-6 h-6"
+      className="h-6 w-6"
       fill="none"
       stroke="currentColor"
       strokeWidth={1.5}
@@ -60,28 +60,28 @@ function App() {
         strokeLinejoin="round"
       />
     </svg>
-  )
+  );
 
   return (
     <>
       <button
-        className="fixed p-2 z-10 right-20 top-4 bg-violet-300 dark:bg-orange-300 text-lg p-1 rounded-md"
+        className="fixed right-20 top-4 z-10 rounded-md bg-violet-300 p-1 p-2 text-lg dark:bg-orange-300"
         onClick={handleThemeSwitch}
         type="button"
       >
-        {theme === 'dark' ? sun : moon}
+        {theme === "dark" ? sun : moon}
       </button>
-      <div className="bg-white dark:bg-stone-900 text-stone-900 dark:text-stone-300 min-h-screen font-inter">
-        <div className="max-w-5xl w-11/12 mx-auto">
-          <Intro/>
-          <Portfolio/>
-          <Timeline/>
-          <Contact/>
-          <Footer/>
+      <div className="min-h-screen bg-white font-inter text-stone-900 dark:bg-stone-900 dark:text-stone-300">
+        <div className="mx-auto w-11/12 max-w-5xl">
+          <Intro />
+          <Portfolio />
+          <Timeline />
+          <Contact />
+          <Footer />
         </div>
       </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
