@@ -2,7 +2,7 @@ import React from "react";
 
 function PortfolioItem({ title, imgUrl, stack, link, activeTab }) {
   return (
-    <div
+    <article
       className={`w-full overflow-hidden rounded-2xl bg-slate-50 shadow-2xl ${
         activeTab ? "flex flex-col items-center justify-start" : "hidden"
       }`}
@@ -14,14 +14,17 @@ function PortfolioItem({ title, imgUrl, stack, link, activeTab }) {
       <div className="mx-auto flex flex-col items-center justify-between gap-4 self-start p-8 pt-4">
         <h3 className="text-4xl font-semibold">{title}</h3>
         <p className="flex flex-row flex-wrap items-center justify-center gap-1 text-sm">
-          {stack.map((item) => (
-            <span className="inline-block rounded-md px-2 py-1 font-semibold hover:bg-slate-200">
+          {stack.map((item, index) => (
+            <span
+              className="inline-block rounded-md px-2 py-1 font-semibold hover:bg-slate-200"
+              key={index}
+            >
               {item}
             </span>
           ))}
         </p>
       </div>
-    </div>
+    </article>
   );
 }
 

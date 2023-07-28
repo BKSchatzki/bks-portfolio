@@ -8,21 +8,21 @@ function Tab() {
   useEffect(() => {}, [activeTab]);
 
   return (
-    <div className="flex flex-col items-center justify-center">
+    <section className="flex flex-col items-center justify-center">
       <Title className="mb-4 text-2xl font-bold">My Projects</Title>
       <div className="w-full">
         <div className="mb-4 grid grid-cols-3 place-items-center gap-4 py-1">
           {portfolio.map((item, index) => (
             <button
-              key={index}
+              aria-selected={activeTab === item}
               className={`${
                 activeTab?.title === item.title
                   ? "bg-gradient-to-r from-yellow-500 to-pink-500"
                   : "bg-slate-50"
               }  w-full rounded-lg py-2 font-semibold shadow-lg`}
+              key={index}
               onClick={() => setActiveTab(item)}
               role="tab"
-              aria-selected={activeTab === item}
             >
               {item.title}
             </button>
@@ -31,31 +31,17 @@ function Tab() {
         <div className="flex justify-center gap-4">
           {portfolio.map((item, index) => (
             <PortfolioItem
-              key={index}
-              imgUrl={item.imgUrl}
-              title={item.title}
-              stack={item.stack}
-              link={item.link}
               activeTab={activeTab && activeTab.title === item.title}
+              imgUrl={item.imgUrl}
+              key={index}
+              link={item.link}
+              stack={item.stack}
+              title={item.title}
             />
-            // <div
-            //   key={index}
-            //   className={`relative flex h-fit w-full flex-col rounded-md p-7 shadow-2xl ${
-            //     activeTab?.title === item.title
-            //       ? "flex flex-col items-center justify-start"
-            //       : "hidden"
-            //   }`}
-            // >
-            //   <div>
-            //     <img src={item.imgUrl} alt={item.title} />
-            //   </div>
-            //   <h1 className="py-3 text-2xl font-semibold">{item.title}</h1>
-            //   <p className="text-lg">{item.stack}</p>
-            // </div>
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
