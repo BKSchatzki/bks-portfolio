@@ -32,7 +32,7 @@ function App() {
   return (
     <>
       <ThemeSwitcher handleThemeSwitch={handleThemeSwitch} theme={theme} />
-      <div className="min-h-screen bg-white font-inter text-stone-900 dark:bg-stone-900 dark:text-stone-300">
+      <div className="min-h-screen bg-slate-100 font-inter text-slate-900">
         <div className="mx-auto w-11/12 max-w-5xl">
           <Intro />
           <Portfolio />
