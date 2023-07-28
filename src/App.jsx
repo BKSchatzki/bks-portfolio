@@ -32,7 +32,7 @@ function App() {
 
   return (
     <>
-      <div className="min-h-screen bg-slate-100 font-inter text-slate-900">
+      <div className="min-h-screen font-inter text-slate-900">
         <div className="mx-auto w-11/12 max-w-3xl">
           <Header handleThemeSwitch={handleThemeSwitch} theme={theme} />
           <Intro />

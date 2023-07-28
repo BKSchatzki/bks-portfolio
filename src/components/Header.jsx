@@ -1,14 +1,23 @@
 import React from "react";
 import ThemeSwitcher from "./ThemeSwitcher";
+import { ArrowUp, Briefcase, Clock, Mail } from "react-feather";
 
 function Header({ handleThemeSwitch, theme }) {
   return (
-    <header className="shadow-2x sticky top-4 ms-auto h-fit w-fit rounded-2xl bg-slate-50 text-center text-xs opacity-60 transition-opacity duration-100 hover:opacity-100">
-      <nav className="flex flex-row items-center justify-evenly gap-2 p-4">
-        <a href="#intro">Top</a>
-        <a href="#portfolio">Projects</a>
-        <a href="#timeline">Journey</a>
-        <a href="#contact">Contact</a>
+    <header className="sticky top-4 z-10 mx-auto h-fit w-11/12 rounded-2xl bg-gradient-to-r from-yellow-500 to-pink-500 text-center text-xs shadow-2xl duration-100 dark:bg-gradient-to-l">
+      <nav className="flex flex-row items-center justify-between gap-2 p-4">
+        <a href="#intro">
+          <ArrowUp className="rounded-md text-lg transition-transform duration-100 active:scale-90" />
+        </a>
+        <a href="#portfolio">
+          <Briefcase className="rounded-md text-lg transition-transform duration-100 active:scale-90" />
+        </a>
+        <a href="#timeline">
+          <Clock className="rounded-md text-lg transition-transform duration-100 active:scale-90" />
+        </a>
+        <a href="#contact">
+          <Mail className="rounded-md text-lg transition-transform duration-100 active:scale-90" />
+        </a>
         <ThemeSwitcher handleThemeSwitch={handleThemeSwitch} theme={theme} />
       </nav>
     </header>
