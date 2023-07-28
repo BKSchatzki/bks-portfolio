@@ -8,7 +8,10 @@ function Tab() {
   useEffect(() => {}, [activeTab]);
 
   return (
-    <section className="my-16 flex flex-col items-center justify-center">
+    <section
+      className="my-16 flex flex-col items-center justify-center"
+      id="portfolio"
+    >
       <Title>My Projects</Title>
       <div className="w-full">
         <div className="mb-4 flex flex-row flex-wrap items-center justify-center gap-4 py-0">

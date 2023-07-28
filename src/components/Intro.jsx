@@ -2,7 +2,10 @@ import React from "react";
 
 function Intro() {
   return (
-    <main className="my-16 flex flex-col items-center justify-center rounded-2xl bg-slate-50 p-8 text-center shadow-2xl">
+    <main
+      className="my-16 flex flex-col items-center justify-center rounded-2xl bg-slate-50 p-8 text-center shadow-2xl"
+      id="intro"
+    >
       <h1 className="mb-1 text-5xl font-bold">I'm Brendan.</h1>
       <p className="mb-3 text-base font-medium">
         Software Engineer | Web Developer

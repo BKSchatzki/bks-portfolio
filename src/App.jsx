@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import ThemeSwitcher from "./components/ThemeSwitcher";
+import Header from "./components/Header";
 import Intro from "./components/Intro";
 import Portfolio from "./components/Portfolio";
 import Timeline from "./components/Timeline";
@@ -31,9 +32,9 @@ function App() {
 
   return (
     <>
-      <ThemeSwitcher handleThemeSwitch={handleThemeSwitch} theme={theme} />
       <div className="min-h-screen bg-slate-100 font-inter text-slate-900">
         <div className="mx-auto w-11/12 max-w-3xl">
+          <Header handleThemeSwitch={handleThemeSwitch} theme={theme} />
           <Intro />
           <Portfolio />
           <Timeline />

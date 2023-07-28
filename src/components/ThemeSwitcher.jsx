@@ -37,7 +37,7 @@ function ThemeSwitcher({ theme, handleThemeSwitch }) {
 
   return (
     <button
-      className="fixed right-20 top-4 z-10 rounded-md bg-indigo-400 p-2 text-lg transition-transform duration-100 active:scale-90 dark:bg-amber-400"
+      className=" rounded-md bg-indigo-400 p-1 text-lg transition-transform duration-100 active:scale-90 dark:bg-amber-400"
       onClick={handleThemeSwitch}
       type="button"
     >
