@@ -3,10 +3,8 @@ import React from "react";
 function Intro() {
   return (
     <div className="flex flex-col items-center justify-center pb-6 pt-20 text-center">
-      <h1 className="mb-1 text-5xl font-bold md:mb-3 md:text-7xl">
-        I'm Brendan.
-      </h1>
-      <p className="mb-3 text-base font-medium md:text-xl">
+      <h1 className="mb-1 text-5xl font-bold">I'm Brendan.</h1>
+      <p className="mb-3 text-base font-medium">
         Software Engineer | Web Developer
       </p>
       <p className="mb-6 max-w-xl text-sm font-bold">

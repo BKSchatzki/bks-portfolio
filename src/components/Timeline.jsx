@@ -5,8 +5,8 @@ import Title from "./Title";
 
 function Timeline() {
   return (
-    <div className="my-20 flex flex-col justify-center md:flex-row">
-      <div className="w-full md:w-7/12">
+    <div className="my-20 flex flex-col justify-center">
+      <div className="w-full">
         <Title>Timeline</Title>
         {timeline.map((item) => (
           <TimelineItem

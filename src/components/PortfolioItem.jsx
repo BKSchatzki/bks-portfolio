@@ -10,14 +10,12 @@ function PortfolioItem({ title, imgUrl, stack, link }) {
     >
       <img
         alt={title}
-        className="h-36 w-full cursor-pointer object-cover md:h-48"
+        className="h-36 w-full cursor-pointer object-cover"
         src={imgUrl}
       />
       <div className="w-full p-4">
-        <h3 className="mb-2 text-lg font-semibold md:mb-3 md:text-xl">
-          {title}
-        </h3>
-        <p className="flex flex-row flex-wrap items-center justify-start gap-2 text-xs md:text-sm">
+        <h3 className="mb-2 text-lg font-semibold">{title}</h3>
+        <p className="flex flex-row flex-wrap items-center justify-start gap-2 text-xs">
           {stack.map((item) => (
             <span className="inline-bloxk rounded-md border-2 border-slate-900 px-2 py-1 font-semibold">
               {item}
