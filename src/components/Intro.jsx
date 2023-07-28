@@ -2,12 +2,12 @@ import React from "react";
 
 function Intro() {
   return (
-    <main className="flex flex-col items-center justify-center pb-6 pt-20 text-center">
+    <main className="my-16 flex flex-col items-center justify-center rounded-2xl bg-slate-50 p-8 text-center shadow-2xl">
       <h1 className="mb-1 text-5xl font-bold">I'm Brendan.</h1>
       <p className="mb-3 text-base font-medium">
         Software Engineer | Web Developer
       </p>
-      <p className="mb-6 max-w-xl text-sm font-bold">
+      <p className="max-w-xl text-sm font-normal">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa rem amet
         vel temporibus possimus modi! Alias iure tenetur possimus amet,
         voluptatibus recusandae molestias ut tempora exercitationem sit ducimus

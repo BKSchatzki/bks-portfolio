@@ -4,14 +4,14 @@ import portfolio from "../data/portfolio";
 import PortfolioItem from "./PortfolioItem";
 
 function Tab() {
-  const [activeTab, setActiveTab] = useState(null);
+  const [activeTab, setActiveTab] = useState(portfolio[0]);
   useEffect(() => {}, [activeTab]);
 
   return (
-    <section className="flex flex-col items-center justify-center">
-      <Title className="mb-4 text-2xl font-bold">My Projects</Title>
+    <section className="my-16 flex flex-col items-center justify-center">
+      <Title>My Projects</Title>
       <div className="w-full">
-        <div className="mb-4 grid grid-cols-3 place-items-center gap-4 py-1">
+        <div className="mb-4 flex flex-row flex-wrap items-center justify-center gap-4 py-0">
           {portfolio.map((item, index) => (
             <button
               aria-selected={activeTab === item}
@@ -19,7 +19,7 @@ function Tab() {
                 activeTab?.title === item.title
                   ? "bg-gradient-to-r from-yellow-500 to-pink-500"
                   : "bg-slate-50"
-              }  w-full rounded-lg py-2 font-semibold shadow-lg`}
+              }  w-fit rounded-lg px-4 py-2 text-sm font-semibold shadow-lg transition-transform duration-100 active:scale-90`}
               key={index}
               onClick={() => setActiveTab(item)}
               role="tab"

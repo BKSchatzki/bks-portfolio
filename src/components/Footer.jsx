@@ -2,12 +2,13 @@ import React from "react";
 
 function Footer() {
   return (
-    <div className="py-5 text-center">
-      <p className="mt-2 text-sm opacity-50">
-        &copy; {new Date().getFullYear()} Brendan K. Schatzki. All rights
-        reserved.
+    <footer className="my-16 text-center">
+      <p className="text-sm opacity-50">
+        &copy; {new Date().getFullYear()} Brendan K. Schatzki.
+        <br />
+        All rights reserved.
       </p>
-    </div>
+    </footer>
   );
 }
 
