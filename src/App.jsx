@@ -5,6 +5,7 @@ import Portfolio from "./components/Portfolio";
 import Timeline from "./components/Timeline";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import Tab from "./components/Tab";
 
 function App() {
   const [theme, setTheme] = useState(null);
@@ -33,9 +34,10 @@ function App() {
     <>
       <ThemeSwitcher handleThemeSwitch={handleThemeSwitch} theme={theme} />
       <div className="min-h-screen bg-slate-100 font-inter text-slate-900">
-        <div className="mx-auto w-11/12 max-w-5xl">
+        <div className="mx-auto w-11/12 max-w-3xl">
           <Intro />
-          <Portfolio />
+          {/* <Portfolio /> */}
+          <Tab />
           <Timeline />
           <Contact />
           <Footer />
