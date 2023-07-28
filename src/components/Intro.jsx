@@ -3,7 +3,7 @@ import React from "react";
 function Intro() {
   return (
     <main
-      className="my-16 flex scroll-m-40 flex-col items-center justify-center rounded-2xl bg-slate-50 p-8 text-center shadow-2xl"
+      className="my-16 flex scroll-m-40 flex-col items-center justify-center rounded-2xl bg-slate-50 p-8 text-center shadow-2xl dark:bg-neutral-900 dark:shadow-neutral-900"
       id="intro"
     >
       <h1 className="mb-1 text-5xl font-bold">I'm Brendan.</h1>

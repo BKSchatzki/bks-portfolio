@@ -6,11 +6,11 @@ import Title from "./Title";
 function Timeline() {
   return (
     <section
-      className="my-16 flex scroll-m-28 flex-col items-center justify-center"
+      className="my-16 flex scroll-m-24 flex-col items-center justify-center"
       id="timeline"
     >
       <Title>Timeline</Title>
-      <div className="w-full rounded-2xl bg-slate-50 p-8 shadow-2xl">
+      <div className="w-full rounded-2xl bg-slate-50 p-8 shadow-2xl dark:bg-neutral-900 dark:shadow-neutral-900">
         {timeline.map((item, index) => (
           <TimelineItem
             details={item.details}
