@@ -25,8 +25,8 @@ export default [
     link: "https://cflatrun.com",
   },
   {
-    title: "nick-shootzki.com",
-    imgUrl: "https://picsum.photos/seed/project5/800/600",
+    title: "Nick B. Schatzki",
+    imgUrl: "src/assets/nick-b-schatzki.jpg",
     stack: ["Vite", "React", "Tailwind", "DaisyUI"],
     link: "#",
   },
