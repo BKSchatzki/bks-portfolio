@@ -8,25 +8,25 @@ IMPORTANT NOTE WITH ADDING ASSETS VIA RELATIVE PATH
 export default [
   {
     title: "Songstruct",
-    imgUrl: "src/assets/songstruct.jpg",
+    imgUrl: "/assets/songstruct.jpg",
     stack: ["Vite", "React", "Tailwind", "DaisyUI"],
     link: "https://songstruct.netlify.app",
   },
   {
     title: "BK Chat",
-    imgUrl: "src/assets/bk-chat.jpg",
+    imgUrl: "/assets/bk-chat.jpg",
     stack: ["Vite", "React", "Tailwind", "Appwrite"],
     link: "#",
   },
   {
     title: "C Flat Run",
-    imgUrl: "src/assets/cflatrun-landingpage.jpg",
+    imgUrl: "/assets/cflatrun-landingpage.jpg",
     stack: ["HTML", "CSS", "JavaScript"],
     link: "https://cflatrun.com",
   },
   {
     title: "Nick B. Schatzki",
-    imgUrl: "src/assets/nick-b-schatzki.jpg",
+    imgUrl: "/assets/nick-b-schatzki.jpg",
     stack: ["Vite", "React", "Tailwind", "DaisyUI"],
     link: "#",
   },
