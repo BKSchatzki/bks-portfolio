@@ -33,8 +33,8 @@ function App() {
   return (
     <>
       <div className="min-h-screen font-inter text-slate-950 dark:text-neutral-50">
+        <Header handleThemeSwitch={handleThemeSwitch} theme={theme} />
         <div className="mx-auto w-11/12 max-w-3xl">
-          <Header handleThemeSwitch={handleThemeSwitch} theme={theme} />
           <Intro />
           <Portfolio />
           <Timeline />
