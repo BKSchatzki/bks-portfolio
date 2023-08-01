@@ -10,7 +10,7 @@ function Timeline() {
       id="timeline"
     >
       <Title>Timeline</Title>
-      <div className="w-full rounded-2xl bg-slate-50/75 p-8 shadow-2xl dark:bg-neutral-900/75 dark:shadow-neutral-900">
+      <div className="w-full rounded-2xl bg-stone-50/75 p-8 shadow-2xl shadow-stone-700/30 dark:bg-slate-900/75 dark:shadow-slate-950/30">
         {timeline.map((item, index) => (
           <TimelineItem
             details={item.details}

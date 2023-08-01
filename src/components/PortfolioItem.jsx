@@ -3,7 +3,7 @@ import React from "react";
 function PortfolioItem({ title, imgUrl, stack, link, activeTab }) {
   return (
     <article
-      className={`w-full overflow-hidden rounded-2xl bg-slate-50/75 shadow-2xl dark:bg-neutral-900/75 dark:shadow-neutral-900 ${
+      className={`w-full overflow-hidden rounded-2xl bg-stone-50/75 shadow-2xl shadow-stone-700/50 dark:bg-slate-900/75 dark:shadow-slate-950/30 ${
         activeTab ? "flex flex-col items-center justify-start" : "hidden"
       }`}
       href={link}
@@ -24,7 +24,7 @@ function PortfolioItem({ title, imgUrl, stack, link, activeTab }) {
         <p className="flex flex-row flex-wrap items-center justify-center gap-1 text-sm">
           {stack.map((item, index) => (
             <span
-              className="inline-block cursor-default rounded-md px-2 py-1 font-semibold hover:bg-slate-200/50 dark:hover:bg-neutral-700"
+              className="inline-block cursor-default rounded-md px-2 py-1 font-semibold hover:bg-stone-200/50 dark:hover:bg-slate-700/50"
               key={index}
             >
               {item}
