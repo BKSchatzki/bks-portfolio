@@ -2,8 +2,10 @@ import React, { useEffect, useState } from "react";
 import Title from "./Title";
 import portfolio from "../data/portfolio";
 import PortfolioItem from "./PortfolioItem";
+import { CSSTransition } from "react-transition-group";
+import "../styles/transitions.css";
 
-function Tab() {
+function Portfolio() {
   const [activeTab, setActiveTab] = useState(portfolio[0]);
   useEffect(() => {}, [activeTab]);
 
@@ -33,14 +35,21 @@ function Tab() {
         </div>
         <div className="flex justify-center gap-4">
           {portfolio.map((item, index) => (
-            <PortfolioItem
-              activeTab={activeTab && activeTab.title === item.title}
-              imgUrl={item.imgUrl}
+            <CSSTransition
+              classNames="portfolio-item"
+              in={activeTab && activeTab.title === item.title}
               key={index}
-              link={item.link}
-              stack={item.stack}
-              title={item.title}
-            />
+              timeout={500}
+              unmountOnExit
+            >
+              <PortfolioItem
+                activeTab={activeTab && activeTab.title === item.title}
+                imgUrl={item.imgUrl}
+                link={item.link}
+                stack={item.stack}
+                title={item.title}
+              />
+            </CSSTransition>
           ))}
         </div>
       </div>
@@ -48,4 +57,4 @@ function Tab() {
   );
 }
 
-export default Tab;
+export default Portfolio;
