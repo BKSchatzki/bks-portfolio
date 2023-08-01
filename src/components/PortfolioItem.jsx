@@ -12,7 +12,7 @@ function PortfolioItem({ title, imgUrl, stack, link, activeTab }) {
     >
       <img
         alt={title}
-        className="object-cover p-4"
+        className="max-h-[600px] object-cover p-4"
         src={imgUrl}
         style={{
           borderTopLeftRadius: "1.5rem",
