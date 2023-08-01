@@ -8,7 +8,7 @@ function ThemeSwitcher({ theme, handleThemeSwitch }) {
       onClick={handleThemeSwitch}
       type="button"
     >
-      {theme === "dark" ? <Sun /> : <Moon />}
+      {theme === "dark" ? <Moon /> : <Sun />}
     </button>
   );
 }
