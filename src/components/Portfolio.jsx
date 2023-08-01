@@ -23,7 +23,7 @@ function Portfolio() {
               className={`${
                 activeTab?.title === item.title
                   ? "bg-gradient-to-r from-yellow-500 to-pink-500 dark:from-pink-700 dark:to-yellow-700"
-                  : "bg-slate-50 dark:bg-neutral-900"
+                  : "bg-slate-50/75 dark:bg-neutral-900/75"
               }  w-fit rounded-lg px-4 py-2 text-sm font-semibold shadow-lg transition-transform duration-100 active:scale-90 dark:shadow-neutral-900`}
               key={index}
               onClick={() => setActiveTab(item)}

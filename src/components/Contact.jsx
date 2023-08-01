@@ -8,14 +8,14 @@ function Contact() {
         <Title>Contact</Title>
         <form
           action="#"
-          className="flex w-full flex-col rounded-2xl bg-slate-50 p-8 shadow-2xl dark:bg-neutral-900 dark:shadow-neutral-900"
+          className="flex w-full flex-col rounded-2xl bg-slate-50/75 p-8 shadow-2xl dark:bg-neutral-900/75 dark:shadow-neutral-900"
           method="POST"
         >
           <label hidden htmlFor="name">
             Name:
           </label>
           <input
-            className="rounded-md border border-slate-200 bg-transparent px-4 py-2 focus:outline-none dark:border-neutral-700"
+            className="rounded-md border border-slate-200 bg-transparent px-4 py-2 hover:bg-slate-50/50 focus:bg-slate-50 focus:outline-none dark:border-neutral-700 dark:hover:bg-neutral-900/50 dark:focus:bg-neutral-900"
             id="name"
             name="name"
             placeholder="Name"
@@ -26,7 +26,7 @@ function Contact() {
             Email:
           </label>
           <input
-            className="my-2 rounded-md border border-slate-200 bg-transparent px-4 py-2 focus:outline-none dark:border-neutral-700"
+            className="my-2 rounded-md border border-slate-200 bg-transparent px-4 py-2 hover:bg-slate-50/50 focus:bg-slate-50 focus:outline-none dark:border-neutral-700 dark:hover:bg-neutral-900/50 dark:focus:bg-neutral-900"
             id="email"
             name="email"
             placeholder="Email"
@@ -37,7 +37,7 @@ function Contact() {
             Message:
           </label>
           <textarea
-            className="mb-4 rounded-md border border-slate-200 bg-transparent px-4 py-2 focus:outline-none dark:border-neutral-700"
+            className="mb-4 rounded-md border border-slate-200 bg-transparent px-4 py-2 hover:bg-slate-50/50 focus:bg-slate-50 focus:outline-none dark:border-neutral-700 dark:hover:bg-neutral-900/50 dark:focus:bg-neutral-900"
             id="message"
             name="message"
             placeholder="Message"
