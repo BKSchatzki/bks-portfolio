@@ -6,11 +6,11 @@ function Intro() {
       className="my-16 flex scroll-m-40 flex-col items-center justify-center rounded-2xl bg-stone-50/75 p-8 text-center shadow-2xl shadow-stone-700/30 dark:bg-slate-900/75 dark:shadow-slate-950/30"
       id="intro"
     >
-      <h1 className="mb-1 text-5xl font-bold">I'm Brendan.</h1>
-      <p className="mb-3 text-base font-medium">
+      <h1 className="mb-1 text-4xl font-bold sm:text-5xl">I'm Brendan.</h1>
+      <p className="mb-3 text-sm font-medium sm:text-base">
         Software Engineer | Web Developer
       </p>
-      <p className="max-w-xl text-sm font-normal">
+      <p className="max-w-xl text-xs font-normal sm:text-sm">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa rem amet
         vel temporibus possimus modi! Alias iure tenetur possimus amet,
         voluptatibus recusandae molestias ut tempora exercitationem sit ducimus

@@ -24,7 +24,7 @@ function Portfolio() {
                 activeTab?.title === item.title
                   ? "bg-gradient-to-r from-yellow-500 to-pink-500 dark:from-violet-700 dark:to-blue-700"
                   : "bg-stone-50/75 dark:bg-slate-900/75"
-              }  w-fit rounded-lg px-4 py-2 text-sm font-semibold shadow-lg shadow-stone-700/50 transition-transform duration-100 active:scale-90 dark:shadow-slate-950/30`}
+              }  w-fit rounded-lg px-4 py-2 text-xs font-semibold shadow-lg shadow-stone-700/50 transition-transform duration-100 active:scale-90 dark:shadow-slate-950/30 sm:text-sm`}
               key={index}
               onClick={() => setActiveTab(item)}
               role="tab"

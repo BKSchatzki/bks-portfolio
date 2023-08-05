@@ -20,8 +20,8 @@ function PortfolioItem({ title, imgUrl, stack, link, activeTab }) {
         }}
       />
       <div className="mx-auto flex flex-col items-center justify-between gap-4 self-start p-8 pt-4">
-        <h3 className="text-2xl font-semibold">{title}</h3>
-        <p className="flex flex-row flex-wrap items-center justify-center gap-1 text-sm">
+        <h3 className="text-xl font-semibold sm:text-2xl">{title}</h3>
+        <p className="flex flex-row flex-wrap items-center justify-center gap-1 text-xs sm:text-sm">
           {stack.map((item, index) => (
             <span
               className="inline-block cursor-default rounded-md px-2 py-1 font-semibold hover:bg-stone-200/50 dark:hover:bg-slate-700/50"
