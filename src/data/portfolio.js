@@ -18,7 +18,7 @@ export default [
   {
     title: "BK Chat",
     description:
-      "A chatroom with login and registration using the Appwrite backend. Plans to include unique rooms, user dashboards, and sharing of formatted code between users.",
+      "A chatroom with login and registration using the Appwrite backend. Plans to include unique rooms, user dashboards, and sharing of formatted code between users, and switch to server-side rendering.",
     imgUrl: "/assets/bk-chat.jpg",
     stack: ["Vite", "React", "Tailwind", "Appwrite"],
     link: "https://bk-chat.netlify.app/",
@@ -39,7 +39,7 @@ export default [
       "A placeholder card-site for a voice artist. Plans to embed SoundCloud files, and implement a simple dashboard allowing the artist to modify their picture, bio, and SoundCloud links.",
     imgUrl: "/assets/nick-b-schatzki.jpg",
     stack: ["Vite", "React", "Tailwind", "DaisyUI"],
-    link: "nbs-portfolio.netlify.app",
+    link: "https://nbs-portfolio.netlify.app",
     repo: "https://github.com/BKSchatzki/nbs-portfolio",
   },
 ];

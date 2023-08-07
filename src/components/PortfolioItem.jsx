@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { GitHub, ExternalLink } from "react-feather";
+import React, { useEffect, useState } from "react";
+import { ExternalLink, GitHub, Info } from "react-feather";
 
 function PortfolioItem({
   title,
@@ -11,10 +11,20 @@ function PortfolioItem({
   activeTab,
 }) {
   const [descriptionVisibility, setDescriptionVisitibility] = useState(false);
+  const [vpIsLg, setVpIsLg] = useState(window.innerWidth >= 1024);
 
   const toggleDescriptionVisibility = () => {
     setDescriptionVisitibility(!descriptionVisibility);
   };
+
+  const checkVpIsLg = () => {
+    setVpIsLg(window.innerWidth >= 1024);
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", checkVpIsLg);
+    return () => window.removeEventListener("resize", checkVpIsLg);
+  });
 
   return (
     <article
@@ -28,6 +38,14 @@ function PortfolioItem({
           className="max-h-[600px] object-cover p-4 sm:p-6 lg:p-8"
           src={imgUrl}
         />
+        <span
+          className={`absolute left-0 top-0 flex gap-1 p-6 text-xs uppercase text-stone-50 opacity-50 dark:text-slate-50 sm:p-9 sm:text-sm lg:p-12 lg:text-base ${
+            descriptionVisibility ? "hidden" : ""
+          }`}
+        >
+          <Info className="h-4 w-4 sm:h-[1.125rem] sm:w-[1.125rem] lg:h-[1.375rem] lg:w-[1.375rem]" />
+          {vpIsLg ? "Click to show description" : "Tap for more"}
+        </span>
         <div
           className={`absolute left-0 top-0 h-full w-full cursor-pointer p-4 transition duration-100 sm:p-6 lg:p-8 ${
             descriptionVisibility ? "opacity-100" : "opacity-0"
@@ -35,7 +53,7 @@ function PortfolioItem({
           onClick={toggleDescriptionVisibility}
         >
           {descriptionVisibility && (
-            <p className="flex h-full w-full items-center justify-center bg-slate-950 bg-opacity-80 p-4 text-center text-sm font-semibold text-stone-50 dark:text-slate-50 sm:p-12 sm:text-base lg:p-16 lg:text-lg">
+            <p className="flex h-full w-full items-center justify-center bg-slate-950 bg-opacity-80 p-4 text-center text-xs font-semibold text-stone-50 dark:text-slate-50 sm:p-12 sm:text-base lg:p-16 lg:text-xl">
               <span className="max-w-sm sm:max-w-lg lg:max-w-xl">
                 {description}
               </span>
