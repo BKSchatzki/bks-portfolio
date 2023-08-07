@@ -1,44 +1,30 @@
 export default [
   {
-    year: "Today",
-    title: "Title 1",
-    duration: "1 year",
+    year: "2023",
+    title: "Today",
+    location: "Las Vegas, NV",
     details:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa rem amet vel temporibus possimus modi! Alias iure tenetur possimus amet, voluptatibus recusandae molestias ut tempora exercitationem sit ducimus vitae!",
+      "After taking 2022 off to reconnect with friends and family, I embraced my new world, and have been grinding away. I build for clients, but I spend most of my time experimenting with tools, new and old, all exciting. I can't wait to work with you.",
   },
   {
-    year: "Today",
-    title: "Title 2",
-    duration: "2 year",
+    year: "2021-2022",
+    title: "Inspiration",
+    location: "Shenzhen, China",
     details:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa rem amet vel temporibus possimus modi! Alias iure tenetur possimus amet, voluptatibus recusandae molestias ut tempora exercitationem sit ducimus vitae!",
+      "Software engineers, game devs, web designers, and e-commerce workers became my new clientele. Tencent, Alibaba, Baidu, ByteDance, and more. I wanted to be in their shoes, so at the end of contract, I came home to make that leap.",
   },
   {
-    year: "Today",
-    title: "Title 3",
-    duration: "3 year",
+    year: "2015-2020",
+    title: "Industry",
+    location: "Dongguan, China",
     details:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa rem amet vel temporibus possimus modi! Alias iure tenetur possimus amet, voluptatibus recusandae molestias ut tempora exercitationem sit ducimus vitae!",
+      "I trained skilled professionals in one of the world's great industrial hubs. In 2020, I called one of my friends from the old startup to talk about switching careers, but before I had a chance to consider anything, I was offered a transfer to a location I couldn't refuse.",
   },
   {
-    year: "Today",
-    title: "Title 4",
-    duration: "4 year",
+    year: "2013-2014",
+    title: "Startup",
+    location: "Pittsburgh, PA",
     details:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa rem amet vel temporibus possimus modi! Alias iure tenetur possimus amet, voluptatibus recusandae molestias ut tempora exercitationem sit ducimus vitae!",
-  },
-  {
-    year: "Today",
-    title: "Title 5",
-    duration: "5 year",
-    details:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa rem amet vel temporibus possimus modi! Alias iure tenetur possimus amet, voluptatibus recusandae molestias ut tempora exercitationem sit ducimus vitae!",
-  },
-  {
-    year: "Today",
-    title: "Title 6",
-    duration: "6 year",
-    details:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa rem amet vel temporibus possimus modi! Alias iure tenetur possimus amet, voluptatibus recusandae molestias ut tempora exercitationem sit ducimus vitae!",
+      "Some university buddies of mine did a hackathon that produced a startup idea. For some reason, they invited the music major (me) along for the ride. So I did the audio for the Kickstarter. And after they got venture funding, I wrote the music.",
   },
 ];
