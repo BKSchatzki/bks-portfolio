@@ -5,7 +5,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        inter: ["inter", "serif"],
+        rubik: ["rubik", "sans-serif"],
       },
     },
   },

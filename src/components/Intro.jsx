@@ -12,23 +12,23 @@ function Intro() {
       <p className="mb-3 text-sm font-medium sm:text-base lg:text-lg">
         Full Stack Developer
       </p>
-      <p className="max-w-xl text-xs font-normal sm:text-sm lg:text-base">
+      <p className="max-w-xl text-xs font-normal sm:text-sm lg:max-w-2xl lg:text-base">
         As a{" "}
-        <span className="bg-gradient-to-r from-violet-700 to-blue-700 bg-clip-text font-semibold text-transparent dark:from-yellow-500 dark:to-pink-500">
+        <span className="bg-gradient-to-r from-violet-800 to-blue-800 bg-clip-text font-semibold text-transparent dark:from-yellow-600 dark:to-pink-600">
           Lifelong Explorer
         </span>
         , my mission is to push the boundaries and explore new territories in my
         life and my work. I have worked as an{" "}
-        <span className="bg-gradient-to-r from-violet-700 to-blue-700 bg-clip-text font-semibold text-transparent dark:from-yellow-500 dark:to-pink-500">
+        <span className="bg-gradient-to-r from-violet-800 to-blue-800 bg-clip-text font-semibold text-transparent dark:from-yellow-600 dark:to-pink-600">
           Ex-Expat Professional
         </span>{" "}
         within vastly different cultures and strive to contribute to and
         cultivate a culture of inclusivity and individuation. I am an{" "}
-        <span className="bg-gradient-to-r from-violet-700 to-blue-700 bg-clip-text font-semibold text-transparent dark:from-yellow-500 dark:to-pink-500">
+        <span className="bg-gradient-to-r from-violet-800 to-blue-800 bg-clip-text font-semibold text-transparent dark:from-yellow-600 dark:to-pink-600">
           Aesthete
         </span>{" "}
         and a{" "}
-        <span className="bg-gradient-to-r from-violet-700 to-blue-700 bg-clip-text font-semibold text-transparent dark:from-yellow-500 dark:to-pink-500">
+        <span className="bg-gradient-to-r from-violet-800 to-blue-800 bg-clip-text font-semibold text-transparent dark:from-yellow-600 dark:to-pink-600">
           Systematizer
         </span>{" "}
         , fervently insisting on maximizing both "vibe" and "flow" in user and
