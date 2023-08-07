@@ -6,6 +6,7 @@ import Portfolio from "./components/Portfolio";
 import Timeline from "./components/Timeline";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import AnimatedSection from "./components/AnimatedSection";
 
 function App() {
   const [theme, setTheme] = useState(null);
@@ -35,10 +36,18 @@ function App() {
       <div className="min-h-screen font-rubik text-stone-950 dark:text-slate-50">
         <Header handleThemeSwitch={handleThemeSwitch} theme={theme} />
         <div className="mx-auto w-11/12 max-w-lg sm:max-w-3xl lg:max-w-4xl">
-          <Intro />
-          <Portfolio />
-          <Timeline />
-          <Contact />
+          <AnimatedSection>
+            <Intro />
+          </AnimatedSection>
+          <AnimatedSection>
+            <Portfolio />
+          </AnimatedSection>
+          <AnimatedSection>
+            <Timeline />
+          </AnimatedSection>
+          <AnimatedSection>
+            <Contact />
+          </AnimatedSection>
           <Footer />
         </div>
       </div>
