@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { GitHub, ExternalLink } from "react-feather";
 
 function PortfolioItem({
@@ -10,6 +10,12 @@ function PortfolioItem({
   repo,
   activeTab,
 }) {
+  const [descriptionVisibility, setDescriptionVisitibility] = useState(false);
+
+  const toggleDescriptionVisibility = () => {
+    setDescriptionVisitibility(!descriptionVisibility);
+  };
+
   return (
     <article
       className={`w-full overflow-hidden rounded-2xl bg-stone-50/75 shadow-2xl shadow-stone-700/50 dark:bg-slate-900/75 dark:shadow-slate-950/30 ${
@@ -21,17 +27,20 @@ function PortfolioItem({
           alt={title}
           className="max-h-[600px] object-cover p-4 sm:p-6 lg:p-8"
           src={imgUrl}
-          style={{
-            borderTopLeftRadius: "1.5rem",
-            borderTopRightRadius: "1.5rem",
-          }}
         />
-        <div className="absolute left-0 top-0 h-full w-full cursor-default p-4 sm:p-6 lg:p-8">
-          <p className="flex h-full w-full items-center justify-center bg-slate-950 bg-opacity-50 p-4 text-center text-sm font-semibold text-stone-50 dark:text-slate-50 sm:p-12 sm:text-base lg:p-16 lg:text-lg">
-            <span className="max-w-sm sm:max-w-lg lg:max-w-xl">
-              {description}
-            </span>
-          </p>
+        <div
+          className={`absolute left-0 top-0 h-full w-full cursor-pointer p-4 transition duration-100 sm:p-6 lg:p-8 ${
+            descriptionVisibility ? "opacity-100" : "opacity-0"
+          }`}
+          onClick={toggleDescriptionVisibility}
+        >
+          {descriptionVisibility && (
+            <p className="flex h-full w-full items-center justify-center bg-slate-950 bg-opacity-80 p-4 text-center text-sm font-semibold text-stone-50 dark:text-slate-50 sm:p-12 sm:text-base lg:p-16 lg:text-lg">
+              <span className="max-w-sm sm:max-w-lg lg:max-w-xl">
+                {description}
+              </span>
+            </p>
+          )}
         </div>
       </div>
       <div className="mx-auto flex flex-col items-center justify-between gap-4 self-start p-8 pt-0">
