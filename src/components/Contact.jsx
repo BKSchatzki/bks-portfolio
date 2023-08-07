@@ -18,7 +18,7 @@ function Contact() {
             Name:
           </label>
           <input
-            className="rounded-md border border-stone-200 bg-transparent px-4 py-2 text-sm hover:bg-stone-50/50 focus:bg-stone-50 focus:outline-none dark:border-slate-700 dark:hover:bg-slate-900/50 dark:focus:bg-slate-900 sm:text-base"
+            className="rounded-md border border-stone-200 bg-transparent px-4 py-2 text-sm hover:bg-stone-50/50 focus:bg-stone-50 focus:outline-none dark:border-slate-700 dark:hover:bg-slate-900/50 dark:focus:bg-slate-900 sm:text-base lg:text-lg"
             id="name"
             name="name"
             placeholder="Name"
@@ -29,7 +29,7 @@ function Contact() {
             Email:
           </label>
           <input
-            className="my-2 rounded-md border border-stone-200 bg-transparent px-4 py-2 text-sm hover:bg-stone-50/50 focus:bg-stone-50 focus:outline-none dark:border-slate-700 dark:hover:bg-slate-900/50 dark:focus:bg-slate-900 sm:text-base"
+            className="my-2 rounded-md border border-stone-200 bg-transparent px-4 py-2 text-sm hover:bg-stone-50/50 focus:bg-stone-50 focus:outline-none dark:border-slate-700 dark:hover:bg-slate-900/50 dark:focus:bg-slate-900 sm:text-base lg:text-lg"
             id="email"
             name="email"
             placeholder="Email"
@@ -40,7 +40,7 @@ function Contact() {
             Message:
           </label>
           <textarea
-            className="mb-4 rounded-md border border-stone-200 bg-transparent px-4 py-2 text-sm hover:bg-stone-50/50 focus:bg-stone-50 focus:outline-none dark:border-slate-700 dark:hover:bg-slate-900/50 dark:focus:bg-slate-900 sm:text-base"
+            className="mb-4 rounded-md border border-stone-200 bg-transparent px-4 py-2 text-sm hover:bg-stone-50/50 focus:bg-stone-50 focus:outline-none dark:border-slate-700 dark:hover:bg-slate-900/50 dark:focus:bg-slate-900 sm:text-base lg:text-lg"
             id="message"
             name="message"
             placeholder="Message"
@@ -48,7 +48,7 @@ function Contact() {
             rows="10"
           />
           <button
-            className="w-max self-center rounded-md bg-gradient-to-r from-yellow-500 to-pink-500 px-6 py-3 text-center text-lg font-extrabold shadow-lg transition-transform duration-100 active:scale-90 dark:from-violet-700 dark:to-blue-700 sm:text-xl"
+            className="w-max self-center rounded-md bg-gradient-to-r from-yellow-500 to-pink-500 px-6 py-3 text-center text-lg font-extrabold shadow-lg transition-transform duration-100 active:scale-90 dark:from-violet-700 dark:to-blue-700 sm:text-xl lg:text-2xl"
             type="button"
           >
             Work With Me

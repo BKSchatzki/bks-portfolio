@@ -14,7 +14,7 @@ function Portfolio() {
       className="my-8 flex scroll-m-24 flex-col items-center justify-center sm:my-16"
       id="portfolio"
     >
-      <Title>My Projects</Title>
+      <Title>Featured Projects</Title>
       <div className="w-full">
         <div className="mb-4 flex flex-row flex-wrap items-center justify-center gap-4 py-0">
           {portfolio.map((item, index) => (
@@ -24,7 +24,7 @@ function Portfolio() {
                 activeTab?.title === item.title
                   ? "bg-gradient-to-r from-yellow-500 to-pink-500 dark:from-violet-700 dark:to-blue-700"
                   : "bg-stone-50/75 dark:bg-slate-900/75"
-              }  w-fit rounded-lg px-4 py-2 text-xs font-semibold shadow-lg shadow-stone-700/50 transition-transform duration-100 active:scale-90 dark:shadow-slate-950/30 sm:text-sm`}
+              }  w-fit rounded-lg px-4 py-2 text-xs font-semibold shadow-lg shadow-stone-700/50 transition-transform duration-100 active:scale-90 dark:shadow-slate-950/30 sm:text-sm lg:text-base`}
               key={index}
               onClick={() => setActiveTab(item)}
               role="tab"

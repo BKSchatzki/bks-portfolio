@@ -6,11 +6,13 @@ function Intro() {
       className="my-8 flex scroll-m-40 flex-col items-center justify-center rounded-2xl bg-stone-50/75 p-8 text-center shadow-2xl shadow-stone-700/30 dark:bg-slate-900/75 dark:shadow-slate-950/30 sm:my-16"
       id="intro"
     >
-      <h1 className="mb-1 text-4xl font-bold sm:text-5xl">I'm Brendan.</h1>
-      <p className="mb-3 text-sm font-medium sm:text-base">
-        Full Stack Web Developer
+      <h1 className="mb-1 text-4xl font-bold sm:text-5xl lg:text-6xl">
+        I'm Brendan.
+      </h1>
+      <p className="mb-3 text-sm font-medium sm:text-base lg:text-lg">
+        Full Stack Developer
       </p>
-      <p className="max-w-xl text-xs font-normal sm:text-sm">
+      <p className="max-w-xl text-xs font-normal sm:text-sm lg:text-base">
         As a{" "}
         <span className="bg-gradient-to-r from-violet-700 to-blue-700 bg-clip-text font-semibold text-transparent dark:from-yellow-500 dark:to-pink-500">
           Lifelong Explorer
