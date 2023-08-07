@@ -11,7 +11,7 @@ function Portfolio() {
 
   return (
     <section
-      className="my-8 flex scroll-m-24 flex-col items-center justify-center sm:my-16"
+      className="my-8 flex scroll-m-24 flex-col items-center justify-center sm:my-16 lg:my-24"
       id="portfolio"
     >
       <Title>Featured Projects</Title>

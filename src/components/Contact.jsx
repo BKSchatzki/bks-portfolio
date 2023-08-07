@@ -48,7 +48,7 @@ function Contact() {
             rows="10"
           />
           <button
-            className="w-max self-center rounded-md bg-gradient-to-r from-yellow-500 to-pink-500 px-6 py-3 text-center text-lg font-extrabold shadow-lg transition-transform duration-100 active:scale-90 dark:from-violet-700 dark:to-blue-700 sm:text-xl lg:text-2xl"
+            className="w-max self-center rounded-md bg-gradient-to-r from-yellow-500 to-pink-500 px-6 py-3 text-center text-lg font-extrabold shadow-lg transition-transform duration-100 hover:brightness-150 active:scale-90 dark:from-violet-700 dark:to-blue-700 sm:text-xl lg:text-2xl"
             type="button"
           >
             Work With Me
