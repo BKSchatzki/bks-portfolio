@@ -40,7 +40,7 @@ function Intro() {
         I'm excited to explore full-time opportunities and individual projects.
         Dive into my{" "}
         <a
-          className="bg-gradient-to-r from-violet-700 to-blue-700 bg-clip-text font-bold text-transparent underline decoration-orange-700 decoration-2 underline-offset-2 hover:scale-150 hover:brightness-200 dark:from-yellow-500 dark:to-pink-500 dark:decoration-indigo-500"
+          className="bg-gradient-to-r from-violet-700 to-blue-700 bg-clip-text font-extrabold text-transparent underline decoration-indigo-500 decoration-2 underline-offset-2 hover:scale-150 hover:brightness-200 dark:from-yellow-500 dark:to-pink-500 dark:decoration-orange-700"
           href="#"
           rel="noreferrer noopener"
           target="_blank"
