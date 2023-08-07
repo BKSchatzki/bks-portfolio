@@ -8,26 +8,47 @@ function Intro() {
     >
       <h1 className="mb-1 text-4xl font-bold sm:text-5xl">I'm Brendan.</h1>
       <p className="mb-3 text-sm font-medium sm:text-base">
-        Software Engineer | Web Developer
+        Full Stack Web Developer
       </p>
       <p className="max-w-xl text-xs font-normal sm:text-sm">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa rem amet
-        vel temporibus possimus modi! Alias iure tenetur possimus amet,
-        voluptatibus recusandae molestias ut tempora exercitationem sit ducimus
-        vitae!
+        As a{" "}
+        <span className="bg-gradient-to-r from-violet-700 to-blue-700 bg-clip-text font-semibold text-transparent dark:from-yellow-500 dark:to-pink-500">
+          Lifelong Explorer
+        </span>
+        , my mission is to push the boundaries and explore new territories in my
+        life and my work. I have worked as an{" "}
+        <span className="bg-gradient-to-r from-violet-700 to-blue-700 bg-clip-text font-semibold text-transparent dark:from-yellow-500 dark:to-pink-500">
+          Ex-Expat Professional
+        </span>{" "}
+        within vastly different cultures and strive to contribute to and
+        cultivate a culture of inclusivity and individuation. I am an{" "}
+        <span className="bg-gradient-to-r from-violet-700 to-blue-700 bg-clip-text font-semibold text-transparent dark:from-yellow-500 dark:to-pink-500">
+          Aesthete
+        </span>{" "}
+        and a{" "}
+        <span className="bg-gradient-to-r from-violet-700 to-blue-700 bg-clip-text font-semibold text-transparent dark:from-yellow-500 dark:to-pink-500">
+          Systematizer
+        </span>{" "}
+        , fervently insisting on maximizing both "vibe" and "flow" in user and
+        team experience by working from first principles, regardless of the
+        field. I love performing, both on the job and literally, thriving in the
+        spotlight but also working to uplift others around me. I strongly
+        believe that we are at our best when working with, for, and{" "}
+        <em className="italic">from</em> others.
         <br />
         <br />
-        Ex perspiciatis et officiis quod non inventore doloribus repellendus
-        odit dolores porro, vero ut, reprehenderit laudantium{" "}
+        I'm excited to explore full-time opportunities and individual projects.
+        Dive into my{" "}
         <a
-          className="text-cyan-600 decoration-red-600 decoration-2 underline-offset-2 hover:underline"
+          className="bg-gradient-to-r from-violet-700 to-blue-700 bg-clip-text font-bold text-transparent underline decoration-orange-700 decoration-2 underline-offset-2 hover:scale-150 hover:brightness-200 dark:from-yellow-500 dark:to-pink-500 dark:decoration-indigo-500"
           href="#"
           rel="noreferrer noopener"
           target="_blank"
         >
-          accusantium
-        </a>
-        ? Consequatur accusamus quo atque?
+          résumé
+        </a>{" "}
+        to delve deeper into my professional journey, and join me in exploring
+        my personal story.
       </p>
     </main>
   );
