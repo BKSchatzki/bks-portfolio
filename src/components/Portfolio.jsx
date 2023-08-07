@@ -14,7 +14,7 @@ function Portfolio() {
       className="my-8 flex scroll-m-24 flex-col items-center justify-center sm:my-16 lg:my-24"
       id="portfolio"
     >
-      <Title>Featured Projects</Title>
+      <Title>Projects</Title>
       <div className="w-full">
         <div className="mb-4 flex flex-row flex-wrap items-center justify-center gap-4 py-0 sm:mb-5 sm:gap-5 lg:mb-6 lg:gap-6">
           {portfolio.map((item, index) => (
