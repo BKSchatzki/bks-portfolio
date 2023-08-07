@@ -15,30 +15,52 @@ function PortfolioItem({
       className={`w-full overflow-hidden rounded-2xl bg-stone-50/75 shadow-2xl shadow-stone-700/50 dark:bg-slate-900/75 dark:shadow-slate-950/30 ${
         activeTab ? "flex flex-col items-center justify-start" : "hidden"
       }`}
-      href={link}
-      rel="noopener noreferrer"
-      target="_blank"
     >
-      <img
-        alt={title}
-        className="max-h-[600px] object-cover p-4 sm:p-6 lg:p-8"
-        src={imgUrl}
-        style={{
-          borderTopLeftRadius: "1.5rem",
-          borderTopRightRadius: "1.5rem",
-        }}
-      />
+      <div className="relative">
+        <img
+          alt={title}
+          className="max-h-[600px] object-cover p-4 sm:p-6 lg:p-8"
+          src={imgUrl}
+          style={{
+            borderTopLeftRadius: "1.5rem",
+            borderTopRightRadius: "1.5rem",
+          }}
+        />
+        <div className="absolute left-0 top-0 h-full w-full cursor-default p-4 sm:p-6 lg:p-8">
+          <p className="flex h-full w-full items-center justify-center bg-slate-950 bg-opacity-50 p-4 text-center text-sm font-semibold text-stone-50 dark:text-slate-50 sm:p-12 sm:text-base lg:p-16 lg:text-lg">
+            <span className="max-w-sm sm:max-w-lg lg:max-w-xl">
+              {description}
+            </span>
+          </p>
+        </div>
+      </div>
       <div className="mx-auto flex flex-col items-center justify-between gap-4 self-start p-8 pt-0">
         <div className="flex items-center justify-center gap-4 sm:gap-5 lg:gap-6">
           <h3 className="text-xl font-semibold sm:text-2xl lg:text-3xl">
             {title}
           </h3>
-          <span className="flex items-center justify-center gap-2">
-            <a href={link} rel="noopener noreferrer" target="_blank">
+          <span className="flex items-center justify-center gap-2 sm:gap-3 lg:gap-4">
+            <a
+              className="itesm-center flex justify-center sm:gap-1"
+              href={link}
+              rel="noopener noreferrer"
+              target="_blank"
+            >
               <ExternalLink className="h-4 w-4 opacity-50 hover:opacity-100 sm:h-[1.125rem] sm:w-[1.125rem] lg:h-[1.375rem] lg:w-[1.375rem]" />
+              <span className="hidden text-sm uppercase sm:inline lg:text-base">
+                Live
+              </span>
             </a>
-            <a href={repo} rel="noopener noreferrer" target="_blank">
+            <a
+              className="itesm-center flex justify-center sm:gap-1"
+              href={repo}
+              rel="noopener noreferrer"
+              target="_blank"
+            >
               <GitHub className="h-4 w-4 opacity-50 hover:opacity-100 sm:h-[1.125rem] sm:w-[1.125rem] lg:h-[1.375rem] lg:w-[1.375rem]" />
+              <span className="hidden text-sm uppercase sm:inline lg:text-base">
+                Repo
+              </span>
             </a>
           </span>
         </div>
