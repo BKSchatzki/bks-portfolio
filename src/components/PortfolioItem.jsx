@@ -1,6 +1,15 @@
 import React from "react";
+import { GitHub, ExternalLink } from "react-feather";
 
-function PortfolioItem({ title, imgUrl, stack, link, activeTab }) {
+function PortfolioItem({
+  title,
+  description,
+  imgUrl,
+  stack,
+  link,
+  repo,
+  activeTab,
+}) {
   return (
     <article
       className={`w-full overflow-hidden rounded-2xl bg-stone-50/75 shadow-2xl shadow-stone-700/50 dark:bg-slate-900/75 dark:shadow-slate-950/30 ${
@@ -20,9 +29,19 @@ function PortfolioItem({ title, imgUrl, stack, link, activeTab }) {
         }}
       />
       <div className="mx-auto flex flex-col items-center justify-between gap-4 self-start p-8 pt-0">
-        <h3 className="text-xl font-semibold sm:text-2xl lg:text-3xl">
-          {title}
-        </h3>
+        <div className="flex items-center justify-center gap-4 sm:gap-5 lg:gap-6">
+          <h3 className="text-xl font-semibold sm:text-2xl lg:text-3xl">
+            {title}
+          </h3>
+          <span className="flex items-center justify-center gap-2">
+            <a href={link} rel="noopener noreferrer" target="_blank">
+              <ExternalLink className="h-4 w-4 opacity-50 hover:opacity-100 sm:h-[1.125rem] sm:w-[1.125rem] lg:h-[1.375rem] lg:w-[1.375rem]" />
+            </a>
+            <a href={repo} rel="noopener noreferrer" target="_blank">
+              <GitHub className="h-4 w-4 opacity-50 hover:opacity-100 sm:h-[1.125rem] sm:w-[1.125rem] lg:h-[1.375rem] lg:w-[1.375rem]" />
+            </a>
+          </span>
+        </div>
         <p className="flex flex-row flex-wrap items-center justify-center gap-1 text-xs sm:text-sm lg:text-base">
           {stack.map((item, index) => (
             <span

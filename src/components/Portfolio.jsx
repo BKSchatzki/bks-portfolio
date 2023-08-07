@@ -44,8 +44,10 @@ function Portfolio() {
             >
               <PortfolioItem
                 activeTab={activeTab && activeTab.title === item.title}
+                description={item.description}
                 imgUrl={item.imgUrl}
                 link={item.link}
+                repo={item.repo}
                 stack={item.stack}
                 title={item.title}
               />
