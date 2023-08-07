@@ -50,23 +50,23 @@ function PortfolioItem({
           </h3>
           <span className="flex items-center justify-center gap-2 sm:gap-3 lg:gap-4">
             <a
-              className="itesm-center flex justify-center sm:gap-1"
+              className="itesm-center flex justify-center opacity-50 hover:opacity-100 sm:gap-1"
               href={link}
               rel="noopener noreferrer"
               target="_blank"
             >
-              <ExternalLink className="h-4 w-4 opacity-50 hover:opacity-100 sm:h-[1.125rem] sm:w-[1.125rem] lg:h-[1.375rem] lg:w-[1.375rem]" />
+              <ExternalLink className="h-4 w-4 sm:h-[1.125rem] sm:w-[1.125rem] lg:h-[1.375rem] lg:w-[1.375rem]" />
               <span className="hidden text-sm uppercase sm:inline lg:text-base">
                 Live
               </span>
             </a>
             <a
-              className="itesm-center flex justify-center sm:gap-1"
+              className="itesm-center flex justify-center opacity-50 hover:opacity-100 sm:gap-1"
               href={repo}
               rel="noopener noreferrer"
               target="_blank"
             >
-              <GitHub className="h-4 w-4 opacity-50 hover:opacity-100 sm:h-[1.125rem] sm:w-[1.125rem] lg:h-[1.375rem] lg:w-[1.375rem]" />
+              <GitHub className="h-4 w-4 sm:h-[1.125rem] sm:w-[1.125rem] lg:h-[1.375rem] lg:w-[1.375rem]" />
               <span className="hidden text-sm uppercase sm:inline lg:text-base">
                 Repo
               </span>
