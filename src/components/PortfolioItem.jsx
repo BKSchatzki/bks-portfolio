@@ -39,12 +39,12 @@ function PortfolioItem({
           src={imgUrl}
         />
         <span
-          className={`absolute left-0 top-0 flex gap-1 p-6 text-xs uppercase text-stone-50 opacity-50 dark:text-slate-50 sm:p-9 sm:text-sm lg:p-12 lg:text-base ${
+          className={`absolute left-0 top-0 flex gap-1 p-6 text-xs lowercase text-stone-50 opacity-50 dark:text-slate-50 sm:p-9 sm:text-sm lg:p-12 lg:text-base ${
             descriptionVisibility ? "hidden" : ""
           }`}
         >
           <Info className="h-4 w-4 sm:h-[1.125rem] sm:w-[1.125rem] lg:h-[1.375rem] lg:w-[1.375rem]" />
-          {vpIsLg ? "Click to show description" : "Tap for more"}
+          {vpIsLg ? "Click for more" : "Tap for more"}
         </span>
         <div
           className={`absolute left-0 top-0 h-full w-full cursor-pointer p-4 transition duration-100 sm:p-6 lg:p-8 ${
@@ -66,7 +66,7 @@ function PortfolioItem({
           <h3 className="text-xl font-semibold sm:text-2xl lg:text-3xl">
             {title}
           </h3>
-          <span className="flex items-center justify-center gap-2 sm:gap-3 lg:gap-4">
+          <span className="flex items-center justify-center gap-4 sm:gap-5 lg:gap-6">
             <a
               className="itesm-center flex justify-center opacity-50 hover:opacity-100 sm:gap-1"
               href={link}
