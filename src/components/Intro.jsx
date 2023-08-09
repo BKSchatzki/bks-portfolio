@@ -32,7 +32,7 @@ function Intro() {
         and a{" "}
         <span className="bg-gradient-to-r from-violet-800 to-blue-800 bg-clip-text font-semibold text-transparent dark:from-yellow-600 dark:to-pink-600">
           Systematizer
-        </span>{" "}
+        </span>
         , fervently insisting on maximizing both "vibe" and "flow" in user and
         team experience by working from first principles, regardless of the
         field. I love performing, both on the job and literally, thriving in the

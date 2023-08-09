@@ -38,14 +38,14 @@ function PortfolioItem({
           className="max-h-[600px] object-cover p-4 sm:p-6 lg:p-8"
           src={imgUrl}
         />
-        <span
+        {/* <span
           className={`absolute left-0 top-0 flex gap-1 p-6 text-xs lowercase text-stone-50 opacity-50 dark:text-slate-50 sm:p-9 sm:text-sm lg:p-12 lg:text-base ${
             descriptionVisibility ? "hidden" : ""
           }`}
         >
           <Info className="h-4 w-4 sm:h-[1.125rem] sm:w-[1.125rem] lg:h-[1.375rem] lg:w-[1.375rem]" />
           {vpIsLg ? "Click for more" : "Tap for more"}
-        </span>
+        </span> */}
         <div
           className={`absolute left-0 top-0 h-full w-full cursor-pointer p-4 transition duration-100 sm:p-6 lg:p-8 ${
             descriptionVisibility ? "opacity-100" : "opacity-0"
