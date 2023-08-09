@@ -46,7 +46,7 @@ function Intro() {
         story, dive into my{" "}
         <a
           className="whitespace-nowrap hover:brightness-150"
-          href="#"
+          href="https://drive.google.com/file/d/1APMjRBqqQ-rjyPCxpOLukbxRpwd4ED_O/view?usp=drive_link"
           rel="noreferrer noopener"
           target="_blank"
         >

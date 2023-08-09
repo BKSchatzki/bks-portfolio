@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import ThemeSwitcher from "./components/ThemeSwitcher";
 import Header from "./components/Header";
 import Intro from "./components/Intro";
 import Portfolio from "./components/Portfolio";
@@ -31,24 +30,25 @@ function App() {
     }
   }, [theme]);
 
+  // Define animation delay for each section
+  const sectionAnimationDelays = [0, 0.2, 0.4, 0.6, 0.8]; // Adjust delays as needed
+
   return (
     <>
       <div className="min-h-screen font-rubik text-stone-950 dark:text-slate-50">
         <Header handleThemeSwitch={handleThemeSwitch} theme={theme} />
         <div className="mx-auto w-11/12 max-w-lg sm:max-w-3xl lg:max-w-4xl">
-          <AnimatedSection>
-            <Intro />
-          </AnimatedSection>
-          <AnimatedSection>
-            <Portfolio />
-          </AnimatedSection>
-          <AnimatedSection>
-            <Timeline />
-          </AnimatedSection>
-          <AnimatedSection>
-            <Contact />
-          </AnimatedSection>
-          <Footer />
+          {/* Map through each section and apply staggered animation */}
+          {[Intro, Portfolio, Timeline, Contact, Footer].map(
+            (Section, index) => (
+              <AnimatedSection
+                key={index}
+                delay={sectionAnimationDelays[index]}
+              >
+                <Section />
+              </AnimatedSection>
+            ),
+          )}
         </div>
       </div>
     </>

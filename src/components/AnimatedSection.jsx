@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { motion, useAnimation } from "framer-motion";
 
-function AnimatedSection({ children }) {
+function AnimatedSection({ children, delay }) {
   const controls = useAnimation();
   const sectionRef = useRef(null);
 
@@ -31,7 +31,7 @@ function AnimatedSection({ children }) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 100 }}
-      animate={controls}
+      animate={{ opacity: 1, y: 0, transition: { delay, duration: 0.5 } }}
       className="section"
       ref={sectionRef}
     >
