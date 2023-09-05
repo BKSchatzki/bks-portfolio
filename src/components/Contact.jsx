@@ -4,7 +4,7 @@ import Title from "./Title";
 function Contact() {
   return (
     <div
-      className="mx-auto my-8 flex scroll-m-24 flex-col sm:my-16"
+      className="mx-auto my-8 flex snap-center scroll-m-24 flex-col sm:my-16"
       id="contact"
     >
       <div className="flex flex-col items-center justify-center">

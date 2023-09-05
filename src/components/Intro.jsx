@@ -5,7 +5,7 @@ import Socials from "./Socials";
 function Intro() {
   return (
     <main
-      className="my-8 flex scroll-m-40 flex-col items-center justify-center rounded-2xl bg-stone-50/75 p-8 text-center shadow-2xl shadow-stone-700/30 dark:bg-slate-900/75 dark:shadow-slate-950/30 sm:my-16 sm:p-12 lg:my-24 lg:p-16"
+      className="my-8 flex snap-center scroll-m-40 flex-col items-center justify-center rounded-2xl bg-stone-50/75 p-8 text-center shadow-2xl shadow-stone-700/30 dark:bg-slate-900/75 dark:shadow-slate-950/30 sm:my-16 sm:p-12 lg:my-24 lg:p-16"
       id="intro"
     >
       <h2 className="mb-1 text-4xl font-bold sm:mb-1.5 sm:text-5xl lg:mb-2 lg:text-6xl">
@@ -15,30 +15,23 @@ function Intro() {
         Full Stack Developer
       </h1>
       <p className="mb-3 max-w-xl text-xs font-normal sm:mb-3.5 sm:text-sm lg:mb-4 lg:max-w-2xl lg:text-base">
-        As a{" "}
+        My lifelong mission is to{" "}
         <span className="bg-gradient-to-r from-violet-800 to-blue-800 bg-clip-text font-semibold text-transparent dark:from-yellow-600 dark:to-pink-600">
-          Lifelong Explorer
+          explore new terriroties
         </span>
-        , my mission is to push the boundaries and explore new territories in my
-        life and my work. I have worked as an{" "}
+        . I have worked as an{" "}
         <span className="bg-gradient-to-r from-violet-800 to-blue-800 bg-clip-text font-semibold text-transparent dark:from-yellow-600 dark:to-pink-600">
-          Ex-Expat Professional
+          expat professional
         </span>{" "}
-        within vastly different cultures and strive to contribute to and
-        cultivate a culture of inclusivity and individuation. I am an{" "}
+        within various cultures and strive to contribute to and cultivate a
+        culture of inclusivity and individuation. I fervently insist on
+        maximizing user and team experience by working from{" "}
         <span className="bg-gradient-to-r from-violet-800 to-blue-800 bg-clip-text font-semibold text-transparent dark:from-yellow-600 dark:to-pink-600">
-          Aesthete
+          first principles
         </span>{" "}
-        and a{" "}
-        <span className="bg-gradient-to-r from-violet-800 to-blue-800 bg-clip-text font-semibold text-transparent dark:from-yellow-600 dark:to-pink-600">
-          Systematizer
-        </span>
-        , fervently insisting on maximizing both "vibe" and "flow" in user and
-        team experience by working from first principles, regardless of the
-        field. I love performing, both on the job and literally, thriving in the
-        spotlight but also working to uplift others around me. I strongly
-        believe that we are at our best when working with, for, and{" "}
-        <em className="italic">from</em> others.
+        . I love performing and thrive in the spotlight but also working to
+        uplift others around me. We are at our best when working with and for
+        others.
       </p>
       <p className="mb-3 max-w-xl text-xs font-normal sm:text-sm lg:max-w-2xl lg:text-base">
         I'm excited to explore full-time opportunities and individual projects.
@@ -62,3 +55,5 @@ function Intro() {
 }
 
 export default Intro;
+
+("My lifelong mission is to explore new terriroties. I have worked as an expat professional within various cultures and strive to contribute to and cultivate a culture of inclusivity and individuation. I fervently insist on maximizing user and team experience by working from first principles. I love performing and thrive in the spotlight but also working to uplift others around me. We are at our best when working with and for others.");

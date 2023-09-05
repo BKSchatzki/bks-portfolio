@@ -37,7 +37,7 @@ function App() {
     <>
       <div className="min-h-screen font-rubik text-stone-950 dark:text-slate-50">
         <Header handleThemeSwitch={handleThemeSwitch} theme={theme} />
-        <div className="mx-auto w-11/12 max-w-lg sm:max-w-3xl lg:max-w-4xl">
+        <div className="mx-auto w-11/12 max-w-lg snap-y snap-mandatory sm:max-w-3xl lg:max-w-4xl">
           {/* Map through each section and apply staggered animation */}
           {[Intro, Portfolio, Timeline, Contact, Footer].map(
             (Section, index) => (

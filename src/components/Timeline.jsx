@@ -6,7 +6,7 @@ import Title from "./Title";
 function Timeline() {
   return (
     <section
-      className="my-8 flex scroll-m-24 flex-col items-center justify-center sm:my-16 lg:my-24"
+      className="my-8 flex snap-center scroll-m-24 flex-col items-center justify-center sm:my-16 lg:my-24"
       id="timeline"
     >
       <Title>Timeline</Title>
